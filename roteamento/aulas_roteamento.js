@@ -1,5 +1,5 @@
 const express = require('express')
-
+const {pegarTodasAsAulas, pegarAulaPorId} = require('../controle/controlador_aulas.js')
 const router_aulas = express.Router()
 
 const {bancodeDados, readFile} = require('../modelo/aulas_modelo.js')//importa o arquivo de modelo
